@@ -147,7 +147,6 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarku(
                     [[InlineKeyboardButton(text="👥 Support Group", url="https://t.me/power_movies_group"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/power_movies_channel")],
                      [InlineKeyboardButton(text="🎬 Telegram Channel", url="https://t.me/power_movies_channel"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]
-                     [InlineKeyboardButton(text="❤ My Owner", url="https://t.me/BruceBanner_TG"), InlineKeyboardButton(text="💋 Love You 💋" ]]))
 
     else:
         update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
