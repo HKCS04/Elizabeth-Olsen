@@ -144,9 +144,8 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="🎉 Add me to your group", url="https://t.me/+WJ6slt1DI-U2ZDA9",  InlineKeyboardButton(text="🤖 Make Own Admin Bot", url="https://t.me/+WJ6slt1DI-U2ZDA9")],
-                     [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/power_movies_group"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/power_movies_channel")],
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarku(
+                    [[InlineKeyboardButton(text="👥 Support Group", url="https://t.me/power_movies_group"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/power_movies_channel")],
                      [InlineKeyboardButton(text="🎬 Telegram Channel", url="https://t.me/power_movies_channel"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]
                      [InlineKeyboardButton(text="❤ My Owner", url="https://t.me/BruceBanner_TG"), InlineKeyboardButton(text="💋 Love You 💋" ]]))
 
